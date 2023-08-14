@@ -77,3 +77,61 @@ function cloz() {
   cart.style.display = 'block';
   
 }
+
+
+
+let slideIndex = 0;
+
+ var myint = setInterval(showSlides, 2000);
+  
+
+
+function showSlides() {
+	let i;
+
+	// get the array of divs' with classname image-sliderfade
+	let slides = document.getElementsByClassName("fade");
+
+    console.log(slides.length)
+	
+	for (i = 0; i < slides.length; i++) {
+		// initially set the display to
+		// none for every image.
+		slides[i].style.display = "none";
+	}
+
+	// increase by 1, Global variable
+	slideIndex++;
+
+	// check for boundary
+	if (slideIndex > slides.length) {
+		slideIndex = 1;
+	}
+
+
+	slides[slideIndex-1].style.display = 'block';
+
+	// Change image every 2 seconds
+	
+}
+function stop() {
+  
+    console.log("stop")
+    clearInterval(myint);
+    var st = document.getElementById('st');
+    var so = document.getElementById('so');
+
+    so.style.color = 'red';
+    st.style.color = 'black';
+    
+  
+}
+function start() {
+  myint = setInterval(showSlides, 2000);
+   var st = document.getElementById('st');
+    var so = document.getElementById('so');
+
+    so.style.color = 'black';
+    st.style.color = 'red';
+}
+

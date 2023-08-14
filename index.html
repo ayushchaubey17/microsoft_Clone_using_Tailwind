@@ -22,7 +22,7 @@
           class="first1 flex justify-between p-3 space-x-6 md:order-2 items-center"
         >
           <button onclick="akc()">
-            <div id="p6" class="first cursor-pointer md:hidden">
+            <div id="p6" class="first cursor-pointer md:hidden ml-1">
               <div class="line bg-black h-0.5 w-4 my-1"></div>
               <div class="line bg-black h-0.5 w-4 my-1"></div>
               <div class="line bg-black h-0.5 w-4 my-1"></div>
@@ -106,8 +106,9 @@
           </div>
           <div id="cart" class="cartaccounte">
             <i class="fa-solid fa-cart-shopping pr-4"></i>
-            <i class="fa-regular fa-user mx-3 pr-10"></i>
+            
           </div>
+          <div><i class="fa-regular fa-user pr-8"></i></div>
         </div>
       </div>
     </section>
@@ -320,7 +321,9 @@
     </div>
 
     <!-- trending features -->
-    <section>
+    <section class="">
+      <!-- 1st image  -->
+      <div class="relative fade">
       <div class="photo flex flex-col md:flex-row bg-gray-100">
         <div class="img">
           <img src="img2.avif" alt="kjk" />
@@ -331,15 +334,103 @@
         >
           <div class="text-4xl font-bold">Xiaomi laptop</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet
-            vel doloribus.
+            i am ayush. i have purchasing the laptop this is awesome
           </p>
           <button class="btn bg-blue-600 w-fit p-2 text-white my-6 font-bold">
             Learn More
           </button>
         </div>
       </div>
+    </div>
+    <!-- 2nd image  -->
+    <div class="relative fade">
+      <div class="photo flex flex-col md:flex-row bg-sec ">
+        <div class="img">
+          <img src="img1.avif" alt="kjk" />
+        </div>
+
+        <div
+          class="lef flex bg-sec flex-col justify-center mx-10 p-6 ">
+          <div class="text-4xl font-bold ">Dell laptop</div>
+          <p>
+            i am ayush. i have purchasing the laptop this is awesome.
+          </p>
+          <button class="btn bg-blue-600 w-fit p-2 text-white my-6 font-bold">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd image  -->
+    <div class="relative fade">
+      <div class="photo flex flex-col md:flex-row bg-thir">
+        <div class="img">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1596x600" alt="kjk" />
+        </div>
+
+        <div
+          class="lef flex flex-col text-white justify-center mx-10 p-6  md:bg-thir"
+        >
+          <div class="text-4xl font-bold">Hp laptop</div>
+          <p>
+            i am ayush. i have purchasing the laptop this is awesome.
+          </p>
+          <button class="btn bg-blue-600 w-fit p-2 text-white my-6 font-bold">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th image  -->
+    <div class="relative fade">
+      <div class="photo flex flex-col md:flex-row bg-fiv ">
+        <div class="img">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=380&hei=213&fit=crop" alt="kjk" />
+        </div>
+
+        <div
+          class="lef flex flex-col justify-center mx-10 p-6 md:bg-fiv"
+        >
+          <div class="text-4xl font-bold">Real me laptop</div>
+          <p>
+            i am ayush. its really good
+          </p>
+          <button class="btn bg-blue-600 w-fit p-2 text-white my-6 font-bold">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 5th image  -->
+    <div class="relative fade">
+      <div class="photo flex flex-col md:flex-row bg-for">
+        <div class="img">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=380&hei=213&fit=crop" alt="kjk" />
+        </div>
+
+        <div
+          class="lef flex flex-col justify-center text-white mx-10 p-6  md:bg-for"
+        >
+          <div class="text-4xl  font-bold">Lenovo laptop</div>
+          <p>
+            i am ayush. i have purchasing the laptop this is awesome.
+          </p>
+          <button class="btn bg-blue-600 w-fit p-2 text-white my-6 font-bold">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
     </section>
+  <div class="flex text-xl flex-row justify-center space-x-5">
+    <button id="st" onclick="start()" class="text-red-500">
+      <i class="fa-solid fa-play"></i>
+    </button>
+    <button id="so" onclick="stop()" class=""><i class="fa-solid fa-pause "></i></button>
+  </div>
+   
 
     <!-- all services -->
     <nav class="md:mt-6">
@@ -350,7 +441,7 @@
             src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40"
             alt=""
           />
-          <p class="text-2xl font-medium text-blue-600 underline">
+          <p class="text-2xl font-medium text-blue-600 underline md:ml-16">
             choose your microsoft
           </p>
         </div>
@@ -479,7 +570,7 @@
 
     <!-- business contents  -->
     <section>
-      <div class="ml-3 mt-3 flex flex-col md:flex-row">
+      <div class="ml-3 mt-5 flex flex-col md:flex-row">
         <div class="first flex flex-col m-3 sm:flex-row sm:space-x-3">
           <div class="w-full md:ml-4 md:mt-6">
             <img
